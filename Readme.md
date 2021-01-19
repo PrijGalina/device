@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Галина Коцарь](https://up.htmlacademy.ru/htmlcss/30/user/848001).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
