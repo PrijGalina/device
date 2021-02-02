@@ -774,3 +774,16 @@ img {
     flex-wrap: nowrap;
     justify-content: space-between;
 }
+
+.filter, 
+.sort {
+    background: var(--basic-grey-light);
+}
+
+.filter .section-title {
+    background-color: #dcdcdc;
+}
+
+.products-image {
+    background-color: #efefef;
+}
