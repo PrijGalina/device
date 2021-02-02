@@ -731,13 +731,13 @@ img {
     color: var(--basic-black);
 }
 
-.pagination-sublist .pagination-link{
+.pagination-sublist .pagination-link {
     width: 30px;
     text-align: center;
     opacity: 0.3;
 }
 
-.pagination-sublist .pagination-link.current{
+.pagination-sublist .pagination-link.current {
     opacity: 1;
 }
 
@@ -769,7 +769,7 @@ img {
     color: rgba(0,0,0,0.3);
 }
 
-.pagination-sublist{
+.pagination-sublist {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
