@@ -107,23 +107,23 @@
                             <legend class="filter-title">Цвет</legend>
                             <ul class="colors-list clear-list">
                                 <li class="filters-item">
-                                    <input class="custom-checkbox" type="checkbox" id="color-black" name="color" value="black">
+                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-black" name="color" value="black">
                                     <label class="filter-label" for="color-black">Черный</label>
                                 </li>
                                 <li class="filters-item">
-                                    <input class="custom-checkbox" type="checkbox" id="color-white" name="color" value="white">
+                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-white" name="color" value="white">
                                     <label class="filter-label" for="color-white">Белый</label>
                                 </li>
                                 <li class="filters-item">
-                                    <input class="custom-checkbox" type="checkbox" id="color-blue" name="color" value="blue">
+                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-blue" name="color" value="blue">
                                     <label class="filter-label" for="color-blue">Синий</label>
                                 </li>
                                 <li class="filters-item">            
-                                    <input class="custom-checkbox" type="checkbox" id="color-red" name="color" value="red">                
+                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-red" name="color" value="red">                
                                     <label class="filter-label" for="color-red">Красный</label>    
                                 </li>
                                 <li class="filters-item">
-                                    <input class="custom-checkbox" type="checkbox" id="color-pink" name="color" value="pink">
+                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-pink" name="color" value="pink">
                                     <label class="filter-label" for="color-pink">Розовый</label>
                                 </li>
                             </ul>
@@ -132,11 +132,11 @@
                             <legend class="filter-title">Bluetooth</legend>
                             <ul class="bluetooth-list clear-list">
                                 <li class="filters-item">
-                                    <input class="custom-radio" type="radio" id="in-stock" name="bluetooth" value="in-stock">
+                                    <input class="custom-choice custom-radio visually-hidden" type="radio" id="in-stock" name="bluetooth" value="in-stock">
                                     <label class="filter-label" for="in-stock">Есть</label>
                                 </li>
                                 <li class="filters-item">
-                                    <input class="custom-radio" type="radio" id="not-available" name="bluetooth" value="not-available">
+                                    <input class="custom-choice custom-radio visually-hidden" type="radio" id="not-available" name="bluetooth" value="not-available">
                                     <label class="filter-label" for="not-available">Нет</label>
                                 </li>
                             </ul>
@@ -150,7 +150,7 @@
                         <h3 class="section-title">Сортировка</h3>
                         <ul class="sort-params-list clear-list">
                             <li class="sort-params-item">
-                                <a class="sort-params-link active" href="blank.html">По цене</a>
+                                <a class="sort-params-link sort-params-link-active" href="blank.html">По цене</a>
                             </li>
                             <li class="sort-params-item">
                                 <a class="sort-params-link" href="blank.html">По типу</a>
@@ -177,7 +177,7 @@
                             <img class="products-image" src="img/products-amateur-selfie-stick.jpg" width="360" height="380" alt="">
                             <div class="products-overlay">
                                 <button class="button products-add" type="button">В корзину</button>
-                                <button class="button products-compare" type="button">Добавить к сравнению</button>
+                                <button class="products-compare" type="button">Добавить к сравнению</button>
                             </div>
                             <div class="products-info">
                                 <a class="products-title" href="blank.html">Любительская селфи палка</a>
@@ -188,7 +188,7 @@
                             <img class="products-image" src="img/products-professional-selfie-stick.jpg" width="360" height="380" alt="">
                             <div class="products-overlay">
                                 <button class="button products-add" type="button">В корзину</button>
-                                <button class="button products-compare" type="button">Добавить к сравнению</button>
+                                <button class="products-compare" type="button">Добавить к сравнению</button>
                             </div>
                             <div class="products-info">
                                 <a class="products-title" href="blank.html">Профессиональная селфи-палка</a>
@@ -199,7 +199,7 @@
                             <img class="products-image" src="img/products-unsinkable-selfie-stick.jpg" width="360" height="380" alt="">
                             <div class="products-overlay">
                                 <button class="button products-add" type="button">В корзину</button>
-                                <button class="button products-compare" type="button">Добавить к сравнению</button>
+                                <button class="products-compare" type="button">Добавить к сравнению</button>
                             </div>
                             <div class="products-info">
                                 <a class="products-title" href="blank.html">Непотопляемая селфи-палка</a>
@@ -210,7 +210,7 @@
                             <img class="products-image" src="img/products-manual-selfie-stick.jpg" width="360" height="380" alt="">
                             <div class="products-overlay">
                                 <button class="button products-add" type="button">В корзину</button>
-                                <button class="button products-compare" type="button">Добавить к сравнению</button>
+                                <button class="products-compare" type="button">Добавить к сравнению</button>
                             </div>
                             <div class="products-info">
                                 <a class="products-title" href="blank.html">Селфи палка "Следуй за мной"</a>
@@ -220,22 +220,22 @@
                     </ul>
                     <ul class="pagination clear-list">
                         <li>
-                            <a class="pagination-link pagination-back" href="blank.html">Назад</a>
+                            <a class="pagination-link pagination-btn" href="blank.html">Назад</a>
                         </li>
                         <li>
                             <ul class="pagination-sublist clear-list">
                                 <li>
-                                    <a class="pagination-link current">1</a>
+                                    <a class="pagination-link pagination-page-numbers current">1</a>
                                 </li>
                                 <li>
-                                    <a class="pagination-link" href="blank.html">2</a>
+                                    <a class="pagination-link pagination-page-numbers" href="blank.html">2</a>
                                 </li>
                                 <li>
-                                    <a class="pagination-link" href="blank.html">3</a>
+                                    <a class="pagination-link pagination-page-numbers" href="blank.html">3</a>
                                 </li>
                             </ul>
                         <li>
-                            <a class="pagination-link pagination-next" href="blank.html">Вперед</a>
+                            <a class="pagination-link pagination-btn" href="blank.html">Вперед</a>
                         </li>
                     </ul>
                 </section>
