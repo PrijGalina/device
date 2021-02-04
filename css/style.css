@@ -41,19 +41,19 @@
     --basic-black: #000000;
     --basic-dark: #363636;
     --basic-grey: #464646;
-    --basic-half-grey: #7e7e7e;
-    --basic-light-grey: #d9d9d9;
-    --basic-light-grey-two: #dcdcdc;
-    --basic-light-light-grey: #e5e5e5;
-    --basic-light-light-light-grey: #ebebeb;
+    --basic-grey-250: #7e7e7e;
+    --basic-grey-200: #d9d9d9;
+    --basic-grey-150: #dcdcdc;
+    --basic-grey-100: #e5e5e5;
+    --basic-grey-50: #ebebeb;
     --basic-white: #ffffff;
     --special-yellow-dark: #f0c52e;
     --special-yellow-light: #f7e296;
     --special-green: #91c92f;
     --special-pink-light: #f6dada;
-    --translucent-very-black: rgba(0, 0, 0, 0.3);
-    --translucent-black: rgba(0, 0, 0, 0.6);
-    --translucent-white: rgba(255, 255, 255, 0.3);
+    --transparent-black-03: rgba(0, 0, 0, 0.3);
+    --transparent-black-06: rgba(0, 0, 0, 0.6);
+    --transparent-white-03: rgba(255, 255, 255, 0.3);
 }
 
 .page-body {
@@ -118,7 +118,7 @@ img {
 }
 
 .search-form-field:hover {
-    color: var(--translucent-black);
+    color: var(--transparent-black-06);
 }
 
 .search-form-field:focus ~ .search-form-btn {
@@ -136,7 +136,7 @@ img {
 
 .search-form-btn:active {
     background-color: var(--basic-black);
-    color: var(--translucent-white);
+    color: var(--transparent-white-03);
 }
 
 .search-form-field:focus {
@@ -263,7 +263,7 @@ img {
 }
 
 .button:active {
-    color: var(--translucent-very-black);
+    color: var(--transparent-black-03);
 }
 
 /*promo*/
@@ -320,7 +320,7 @@ img {
 
 .services-background {
     height: 288px;
-    background-color: var(--basic-light-light-grey);
+    background-color: var(--basic-grey-100);
 }
 
 /*about*/
@@ -700,7 +700,7 @@ img {
     justify-content: space-between;
     align-items: center;
     width: 760px;
-    background: var(--basic-light-light-light-grey);
+    background: var(--basic-grey-50);
 }
 
 .pagination-link {
@@ -741,11 +741,11 @@ img {
 
 .pagination-btn:hover,
 .pagination-btn:focus {
-    background-color: var(--basic-light-grey);
+    background-color: var(--basic-grey-200);
 }
 
 .pagination-btn:active {
-    color: var(--translucent-very-black);
+    color: var(--transparent-black-03);
 }
 
 .pagination-sublist {
@@ -760,9 +760,9 @@ img {
 }
 
 .filter .section-title {
-    background-color: var(--basic-light-grey-two);
+    background-color: var(--basic-grey-150);
 }
 
 .products-image {
-    background-color: var(--basic-light-grey);
+    background-color: var(--basic-grey-200);
 }
