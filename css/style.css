@@ -257,7 +257,6 @@ img {
     opacity: 0.3;
 }
 
-
 .menu-link {
     display: block;
     padding-bottom: 18px;
@@ -487,14 +486,14 @@ img {
     background-color: var(--basic-grey-100);
 }
 
-.services-btn{
+.services-btn {
     width: 160px;
     padding-left: 19px;
     box-sizing: border-box;
     text-align: left;
 }
 
-.services-btn:active{
+.services-btn:active {
     width: 277px;
     background: var(--basic-black);
     color: var(--special-yellow-light);
@@ -502,31 +501,31 @@ img {
     border:none;
 }
 
-.services-btn:focus{
+.services-btn:focus {
     outline: none;
     border:none; 
 }
 
-.services-btn:active::before{
+.services-btn:active::before {
     content: none;  
 }
 
-.services-btn-active{
+.services-btn-active {
     width: 277px;
     background: var(--basic-black);
     color: var(--special-yellow-light);
 }
 
-.services-btn-active::before{
+.services-btn-active::before {
     content: none;
 }
 
 /*brands*/
-.brands{
+.brands {
     margin-bottom: 90px;
 }
 
-.brands-list{
+.brands-list {
     display: grid;
     grid-template-columns: 260px 260px 260px 260px;
     grid-template-rows: 100px;
@@ -536,7 +535,7 @@ img {
 }
 
 /*infoblock*/
-.infoblock{
+.infoblock {
     display: grid;
     grid-template-columns: 473px 560px;
     grid-template-rows: 1fr;
@@ -575,7 +574,7 @@ img {
     background-color: var(--basic-dark);
 }
 
-.footer-container{
+.footer-container {
     display: grid;
     grid-template-columns: 260px 1fr 360px;
     grid-template-rows: 1fr 1fr 1fr;
@@ -599,16 +598,16 @@ img {
     grid-area: address;
 }
 
-.main-footer .site-navigation{
+.main-footer .site-navigation {
     grid-area: first-menu;
     justify-self: center;
 }
 
-.main-footer .social-list{
+.main-footer .social-list {
     grid-area: social;
 }
 
-.user-basket-navigation{
+.user-basket-navigation {
     display: flex;
     grid-area: second-menu;
     justify-self: end;
@@ -730,7 +729,7 @@ img {
 }
 
 /*checkbox + radio*/
-.custom-choice + label::before{
+.custom-choice + label::before {
     content: '';
     position: absolute;
     top: 50%;
