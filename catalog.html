@@ -16,30 +16,30 @@
     <body class="page-body">
         <!--HEADER-->
         <header class="main-header">
-            <a class="main-header-logo" href="index.html" title="Перейти на главную страницу">
+            <a href="index.html" class="main-header-logo">
                 <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
             </a>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="GET">
-                <input class="search-form-field" type="search" name="search" placeholder="Поиск по сайту" value required> 
+                <input class="search-form-field" type="search" name="search" placeholder="Поиск по сайту" value="" required> 
                 <button class="search-form-btn" type="submit">Найти</button>
             </form>
             <ul class="user-navigation clear-list">
-                <li>
+                <li class="visually-hidden">
                     <a class="login-link default-link" href="blank.html" title="Авторизироваться на сайте">Войти</a>
                 </li>
-                <li>
+                <li class="">
                     <a class="personal-link default-link" href="blank.html" title="Перейти на страницу профиля">Валентин Петухов</a><!-- переход на страницу профиля -->
                 </li>
-                <li>
+                <li class="">
                     <a class="exit-link default-link" href="blank.html" title="Выйти из личного кабинета">Выйти</a>
                 </li>
             </ul>
             <ul class="order-navigation clear-list">
                 <li>
-                    <a class="compare-link default-link" href="blank.html" title="Перейти к сравнению">Сравнить</a>
+                    <a class="compare-link default-link" href="blank.html" title="Перейти на страницу сравнения товаров">Сравнить</a>
                 </li> 
                 <li>
-                    <a class="basket-link default-link" href="blank.html">Корзина</a>
+                    <a class="basket-link default-link" href="blank.html" title="Перейти к корзине">Корзина</a>
                 </li>
             </ul>
             <nav class="main-navigation">
@@ -47,7 +47,7 @@
                 <ul class="site-navigation menu clear-list">
                     <li class="menu-item">
                         <a class="menu-link" href="blank.html">Каталог товаров</a>
-                        <ul class="submenu dropdown clear-list">
+                        <ul class="submenu dropdown clear-list visually-hidden">
                             <li class="submenu-item">
                                 <a class="submenu-link" href="catalog.html">Виртуальная реальность</a>
                             </li>
@@ -83,19 +83,24 @@
 
         <!--MAIN-->
         <main class="container">
-            <h1 class="page-title">Моноподы для селфи</h1>
-            <ul class="breadcrumbs clear-list">
-                <li>
-                    <a class="breadcrumbs-link" href="index.html">Главная</a>
-                </li>
-                <li>
-                    <a class="breadcrumbs-link" href="blank.html">Каталог товаров</a>
-                </li>
-                <li>
-                    <a class="breadcrumbs-link current">Моноподы для селфи</a>
-                </li>
-            </ul>
-            <div><!-- для грида-->
+            <div class="inner-container">
+                <h1 class="page-title">Моноподы для селфи</h1>
+                <ul class="breadcrumbs clear-list">
+                    <li>
+                        <a class="breadcrumbs-link" href="index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a class="breadcrumbs-link" href="blank.html">Каталог товаров</a>
+                    </li>
+                    <li>
+                        <a class="breadcrumbs-link current">Моноподы для селфи</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="background">
+               <div class="top"></div>
+            </div>
+            <div class="catalog-inner inner-container"><!-- для грида-->
                 <section class="filter">
                     <h2 class="section-title">Фильтр</h2>
                     <form class="filter-form" action="https://echo.htmlacademy.ru/" method="GET">
@@ -240,67 +245,72 @@
                     </ul>
                 </section>
             </div>
+            
         </main>
         
         <!--FOOTER-->
         <footer class="main-footer">
-            <a class="main-footer-logo" href="index.html" title="Перейти на главную страницу">
-                <svg width="163" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M-.151.702v33.6h13.532a15.721 15.721 0 0 0 11.72-4.824 16.459 16.459 0 0 0 4.712-11.976 16.457 16.457 0 0 0-4.712-11.976A15.724 15.724 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.408 9.408 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8v.003zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952h.004zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.508 15.508 0 0 0 6.041-5.688l-6.67-3.84a7.481 7.481 0 0 1-3.165 3.024 9.873 9.873 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.911 9.911 0 0 1-2.682-7.248 9.91 9.91 0 0 1 2.682-7.248 9.593 9.593 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.589 7.589 0 0 1 3.19 3.048l6.67-3.84a15.874 15.874 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476 2.95.027 5.859-.691 8.458-2.088h.003zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952h.003z" fill="#000"/>
-                </svg>            
-            </a>
-            <address class="footer-address">г. Москва, ул. Строителей, 15</address>
-            <ul class="site-navigation menu clear-list">
-                <li class="menu-item">
-                    <a class="menu-link" href="blank.html">Доставка</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="blank.html">Гарантия</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="blank.html">Контакты</a>
-                </li>
-            </ul>
-            <ul class="social-list clear-list">
-                <li class="social-item">
-                    <a class="social-link" href="blank.html">
-                        <span class="visually-hidden">Facebook</span>                
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a class="social-link" href="blank.html">
-                        <span class="visually-hidden">Instagram</span>              
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a class="social-link" href="blank.html">
-                        <span class="visually-hidden">Twitter</span>               
-                    </a>
-                </li>
-            </ul>
-            <ul class="user-navigation clear-list">
-                <li>
-                    <a class="login-link default-link" href="blank.html">Войти</a>
-                </li>
-                <li>
-                    <a class="personal-link default-link" href="blank.html">Валентин Петухов</a>
-                </li>
-                <li>
-                    <a class="exit-link default-link" href="blank.html">Выйти</a>
-                </li>
-            </ul>
-            <ul class="order-navigation clear-list">
-                <li>
-                    <a class="compare-link default-link" href="blank.html">Сравнить</a>
-                </li> 
-                <li>
-                    <a class="basket-link default-link" href="blank.html">Корзина</a>
-                </li>
-            </ul>
-            <span>Тел.: <a class="footer-phone" href="tel:89454959505">+7 (495) 495-95-95</a></span>
-            <a class="developer-link" href="https://htmlacademy.ru/intensive/htmlcss" title="Перейти на сайт htmlacademy">
-                <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy — интерактивные онлайн-курсы по HTML, CSS и JS.">       
-            </a>
+            <div class="inner-container footer-container">
+                <a href="index.html" class="main-footer-logo">
+                    <svg width="163" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M-.151.702v33.6h13.532a15.721 15.721 0 0 0 11.72-4.824 16.459 16.459 0 0 0 4.712-11.976 16.457 16.457 0 0 0-4.712-11.976A15.724 15.724 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.408 9.408 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8v.003zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952h.004zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.508 15.508 0 0 0 6.041-5.688l-6.67-3.84a7.481 7.481 0 0 1-3.165 3.024 9.873 9.873 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.911 9.911 0 0 1-2.682-7.248 9.91 9.91 0 0 1 2.682-7.248 9.593 9.593 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.589 7.589 0 0 1 3.19 3.048l6.67-3.84a15.874 15.874 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476 2.95.027 5.859-.691 8.458-2.088h.003zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952h.003z" fill="#000"/>
+                    </svg>        
+                </a>
+                <address class="footer-address">г. Москва, ул. Строителей, 15</address>
+                <ul class="site-navigation menu clear-list">
+                    <li class="menu-item">
+                        <a class="menu-link" href="blank.html">Доставка</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="blank.html">Гарантия</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="blank.html">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="social-list clear-list">
+                    <li class="social-item">
+                        <a class="social-link" href="#">
+                            <span class="visually-hidden">Facebook</span>                
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="#">
+                            <span class="visually-hidden">Instagram</span>              
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="#">
+                            <span class="visually-hidden">Twitter</span>               
+                        </a>
+                    </li>
+                </ul>
+                <div class="user-basket-navigation">
+                    <ul class="user-navigation clear-list">
+                        <li class="visually-hidden">
+                            <a class="login-link default-link" href="blank.html">Войти</a>
+                        </li>
+                        <li>
+                            <a class="personal-link default-link" href="blank.html">Валентин Петухов</a>
+                        </li>
+                        <li>
+                            <a class="exit-link default-link" href="blank.html">Выйти</a>
+                        </li>
+                    </ul>
+                    <ul class="order-navigation clear-list">
+                        <li>
+                            <a class="compare-link default-link" href="blank.html">Сравнить</a>
+                        </li> 
+                        <li>
+                            <a class="basket-link default-link" href="blank.html">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+                <span class="footer-phone">Тел.: <a class="footer-phone-link" href="tel:89454959505">+7 (495) 495-95-95</a></span>
+                <a class="developer-link" href="https://htmlacademy.ru/intensive/htmlcss" title="Перейти на сайт htmlacademy">
+                    <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy — интерактивные онлайн-курсы по HTML, CSS и JS.">      
+                </a>
+            </div>
         </footer>
     </body>
 </html>
