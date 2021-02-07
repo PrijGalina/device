@@ -63,8 +63,7 @@
 .page-body {
     display: grid;
     grid-template-columns: 100%;
-    /*grid-template-rows: 344px 1fr 324px;*/
-    grid-template-rows: min-content 1fr min-content;
+    grid-template-rows: minmax(344px, min-content) 1fr minmax(324px, min-content);
     gap: 0px 0px;
     grid-template-areas:
       "header"
@@ -666,6 +665,7 @@ img {
 }
 
 .page-title {
+    margin: 44px 0 30px 60px;
     font-family: "Gilroy", "Verdana", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -954,6 +954,8 @@ img {
     justify-content: space-between;
     align-items: center;
     width: 760px;
+    margin-left: 72px;
+    margin-bottom: 78px;
     background: var(--basic-grey-50);
 }
 
@@ -1049,8 +1051,9 @@ img {
 .background::after {
     content: "";
     position: absolute;
+    top: 0px;
+    bottom: 0px;
     display: block;
-    height: 100%;
     width: 50%;
     background: var(--basic-grey-100);
     z-index: -100;
@@ -1081,4 +1084,40 @@ img {
 
 .sort .section-title{
     background: var(--basic-grey-100);
+}
+
+.breadcrumbs {
+    margin-left: 60px;
+    margin-bottom: 50px;
+}
+.filter {
+    padding-left: 60px;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+    padding-left: 72px;
+    background: var(--basic-grey-100);
+}
+
+.sort-params-list {
+    display: flex;
+}
+
+.sort-value-list {
+    display: flex;
+}
+
+.products-list {
+    padding-left: 72px;
+    padding-top: 69px;
+    display: grid;
+    grid-gap: 48px 40px;
+    grid-template-columns: 361px 361px;
+    margin-bottom: 40px;
+}
+
+.filter-form {
+    margin-top: 70px;
 }
