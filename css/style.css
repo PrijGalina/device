@@ -189,9 +189,28 @@ img {
     justify-self: end; 
 }
 
-.site-navigation {
+.main-footer .site-navigation {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
+}
+
+.main-footer .menu-item:not(:last-of-type) {
+    margin-right: 36px;
+}
+
+.main-header .site-navigation {
+    display: grid;
+    grid-template-columns: 540px 160px 160px 180px;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . . .";
+}
+
+.site-navigation .menu-item:last-of-type {
+    justify-self: end;
 }
 
 .main-header-logo {
