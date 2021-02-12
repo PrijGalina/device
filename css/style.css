@@ -138,8 +138,7 @@ img {
 
 .user-navigation { 
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     grid-area: user; 
 }
 
@@ -183,16 +182,14 @@ img {
 
 .order-navigation { 
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     grid-area: basket;
     justify-self: end; 
 }
 
 .main-footer .site-navigation {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -989,7 +986,7 @@ img {
 
 .pagination {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 760px;
@@ -1045,7 +1042,7 @@ img {
 
 .pagination-sublist {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
