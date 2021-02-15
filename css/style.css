@@ -107,6 +107,12 @@ img {
     margin: 0 auto;
 }
 
+.clear-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 /*header*/
 .main-header {
     position: relative;
@@ -140,12 +146,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     grid-area: user; 
-}
-
-.clear-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    padding-right: 40px;
 }
 
 .default-link {
@@ -608,33 +609,40 @@ img {
 .footer-container {
     display: grid;
     grid-template-columns: 260px 1fr 360px;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 68px 60px 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "logo . second-menu"
+      "logo second-menu second-menu"
       "address first-menu phone"
       ". social htmlacademy";
-    padding-top: 46px;
+    padding-top: 31px;
     padding-bottom: 64px;
 }
 
 .main-footer-logo {
+    position: relative;
     display: block;
+    padding-top: 33px;
+    height: 35px;
     grid-area: logo;
 }
 
 .footer-address {
+    grid-area: address;
+    align-self: flex-end;
     line-height: 20px;
     color: var(--basic-white);
-    grid-area: address;
 }
 
 .main-footer .site-navigation {
+    position: relative;
     grid-area: first-menu;
     justify-self: center;
+    align-self: end;
 }
 
 .main-footer .social-list {
+    position: relative;
     grid-area: social;
 }
 
@@ -646,6 +654,7 @@ img {
 
 .main-footer .menu-link {
     color: var(--basic-white);
+    padding-bottom: 0;
 }
 
 .main-footer .default-link {
@@ -663,9 +672,11 @@ img {
 }
 
 .footer-phone {
+    position: relative;
     color: var(--basic-white);
     grid-area: phone;
     justify-self: end;
+    align-self: end;
 }
 
 .footer-phone-link {
@@ -686,6 +697,7 @@ img {
 }
 
 .developer-link {
+    margin-top: 68px;
     display: block;
     grid-area: htmlacademy;
     justify-self: end;
@@ -919,6 +931,9 @@ img {
 }
 
 .products-price {
+    display: block;
+    width: 100px;
+    text-align: right;
     font-family: "Gilroy", "Verdana", sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -927,6 +942,8 @@ img {
 }
 
 .sort-params-link {
+    display: block;
+    margin-right: 30px;
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
@@ -1130,7 +1147,14 @@ img {
 }
 
 .breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 60px;
+}
+
+.breadcrumbs li{
+    position: relative;
+    margin-right: 40px;
 }
 
 .filter {
@@ -1138,7 +1162,9 @@ img {
 }
 
 .sort {
-    display: flex;
+    display: grid;
+    grid-template-columns: 160px auto 60px;
+    gap: 0px 40px;
     align-items: center;
     padding-left: 72px;
     background: var(--basic-grey-100);
@@ -1146,10 +1172,14 @@ img {
 
 .sort-params-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .sort-value-list {
     display: flex;
+    justify-content: space-between;
+    padding-right: 4px;
+    padding-left: 11px;
 }
 
 .products-list {
@@ -1163,4 +1193,9 @@ img {
 
 .filter-form {
     margin-top: 70px;
+}
+
+.products-info {
+    display: flex;
+    justify-content: space-between;
 }
