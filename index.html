@@ -89,7 +89,7 @@
                 <h2 class="visually-hidden">Промо-слайдер</h2>
                 <!--slider-->
                 <ul class="promo-list clear-list">
-                    <li class="promo-item slide-stick">
+                    <li class="promo-item slide-current" data-num-slide="01">
                         <div class="promo-item-left">
                             <img src="img/promo-selfie-stick.png" width="384" height="486" alt="Длинная палка для селфи">
                         </div>
@@ -97,76 +97,75 @@
                             <p class="promo-title">Делай селфи,<br> как Бен Стиллер!</p>
                             <p class="promo-description">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                             <a class="button" href="blank.html">Подробнее</a>
-                            <table class="characteristic">
-                                <tbody class="characteristic-body characteristic-selfie">
-                                    <tr class="characteristic-selfie-row">
-                                        <td class="characteristic-value">8,5 м</td>
-                                        <td class="characteristic-value">5 кг</td>
-                                        <td class="characteristic-value">Карбон</td>
-                                    </tr>
-                                    <tr class="characteristic-selfie-row">
-                                        <td class="characteristic-label">Длина палки</td>
-                                        <td class="characteristic-label">Вес палки</td>
-                                        <td class="characteristic-label">Материал</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            
+                            <div class="characteristics">
+                                <dl class="characteristic">
+                                    <dd class="characteristic-value">8,5 м</dd>
+                                    <dt class="characteristic-label">Длина палки</dt>
+                                </dl>
+                                <dl class="characteristic">
+                                    <dd class="characteristic-value">5 кг</dd>
+                                    <dt class="characteristic-label">Вес палки</dt>
+                                </dl>
+                                <dl class="characteristic">
+                                    <dd class="characteristic-value">Карбон</dd>
+                                    <dt class="characteristic-label">Материал</dt>
+                                </dl>
+                            </div>
                         </div>
                     </li>
-                    <li class="promo-item slide-bracelet">
+                    <li class="promo-item" data-num-slide="02">
                         <div class="promo-item-left">
                             <img src="img/promo-fitness-bracelet.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
                         </div>
                         <div class="promo-item-right">
                             <p class="promo-title">Худеем<br>правильно!</p>
                             <p class="promo-description">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
+                            <a class="button" href="blank.html">Подробнее</a>
                             <table class="characteristic">
-                                <tbody class="characteristic-body characteristic-braclet">
-                                    <tr class="characteristic-braclet-row">
+                                <tbody class="characteristic-body">
+                                    <tr class="characteristic-row">
                                         <td class="characteristic-value">48 часов</td>
                                     </tr>
-                                    <tr class="characteristic-braclet-row">
+                                    <tr class="characteristic-row">
                                         <td class="characteristic-label">Без подзарядки</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <a class="button" href="blank.html">Подробнее</a>
                         </div>
                     </li>
-                    <li class="promo-item slide-quadcopter">
+                    <li class="promo-item" data-num-slide="03">
                         <div class="promo-item-left">
                             <img src="img/promo-quadcopter.png" width="526" height="334" alt="Квадрокоптер с мощным лазером">
                         </div>
                         <div class="promo-item-right">
                             <p class="promo-title">Порхает как бабочка,<br>жалит как пчела!</p>
                             <p class="promo-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
+                            <a class="button" href="blank.html">Подробнее</a>
                             <table class="characteristic">
-                                <tbody class="characteristic-body characteristic-quadcopter">
-                                    <tr class="characteristic-quadcopter-row">
+                                <tbody class="characteristic-body">
+                                    <tr class="characteristic-row">
                                         <td class="characteristic-value">800 м</td>
                                         <td class="characteristic-value">50 м</td>
                                     </tr>
-                                    <tr class="characteristic-quadcopter-row">
+                                    <tr class="characteristic-row">
                                         <td class="characteristic-label">Дальность полета</td>
                                         <td class="characteristic-label">Радиус поражения</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <a class="button" href="blank.html">Подробнее</a>
                         </div>
                     </li>
                 </ul>
                 <!--pagination-->
                 <ul class="promo-pagination clear-list">
                     <li class="promo-pagination-item">
-                        <button type="button" class="promo-pagination-item-btn">1</button>
+                        <button type="button" class="promo-pagination-item-btn btn-current" aria-label="Первый слайд"></button>
                     </li>
                     <li class="promo-pagination-item">
-                        <button type="button" class="promo-pagination-item-btn">2</button>
+                        <button type="button" class="promo-pagination-item-btn" aria-label="Второй слайд"></button>
                     </li>
                     <li class="promo-pagination-item">
-                        <button type="button" class="promo-pagination-item-btn">3</button>
+                        <button type="button" class="promo-pagination-item-btn" aria-label="Третий слфйд"></button>
                     </li>
                 </ul>
             </section>
@@ -213,7 +212,7 @@
                         </li>
                     </ul>
                     <ul class="services-list clear-list">
-                        <li class="services-item services-item-delivery">
+                        <li class="services-item services-item-delivery services-current">
                             <h3 class="services-title">Доставка</h3>
                             <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему<br> подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на ваш этаж.</p>
                         </li>
@@ -260,7 +259,7 @@
             <!-- About -->
             <div class="inner-container infoblock">
                 <section class="about">
-                    <h2 class="about-title">О нас</h2>
+                    <h2 class="about-title infoblock-title">О нас</h2>
                     <div class="about-text">
                         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
@@ -275,7 +274,7 @@
                 
                 <!-- Contacts-->
                 <section class="contacts">
-                    <h2 class="contacts-title">Контакты</h2>
+                    <h2 class="contacts-title infoblock-title">Контакты</h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                     <a class="map" href="#">
                         <img src="img/map.png" width="560" height="222" alt="Адрес на карте: улица Строителей, дом 15">
