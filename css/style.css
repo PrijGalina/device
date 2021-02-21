@@ -66,7 +66,6 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: minmax(320px, min-content) 1fr minmax(324px, min-content);
-    gap: 0 0;
     grid-template-areas:
       "header"
       "main"
@@ -244,7 +243,6 @@ img {
     display: grid;
     grid-template-columns: 540px 159px 121px 220px;
     grid-template-rows: 1fr;
-    gap: 0 0;
     grid-template-areas:
       ". . . .";
 }
@@ -490,12 +488,12 @@ img {
     content: attr(data-num-slide);
     position: absolute;
     right: 47px;
-    top: 43px;
-    font-family: Gilroy;
+    top: 18px;
+    font-family: "Gilroy", "Verdana", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 179px;
-    line-height: 127px;
+    line-height: 1;
     color: var(--basic-white);
 }
 
@@ -576,26 +574,26 @@ img {
     background-color: var(--basic-white);
 }
 
-.promo-item[data-num-slide="01"] .promo-item-left {
+.promo-selfie .promo-item-left {
     padding-top: 17px;
     padding-left: 89px;
 }
 
-.promo-item[data-num-slide="02"] .promo-item-left {
+.promo-bracelet .promo-item-left {
     padding-top: 43px;
     padding-left: 116px;
 }
 
-.promo-item[data-num-slide="03"] .promo-item-left {
+.promo-quadcopter .promo-item-left {
     padding-top: 99px;
     padding-left: 30px;
 }
 
-.promo-item[data-num-slide="01"] .characteristic {
+.promo-selfie .characteristic {
     margin-right: 58px;
 }
 
-.promo-item[data-num-slide="03"] .characteristic {
+.promo-quadcopter .characteristic {
     margin-right: 62px;
 }
 
@@ -939,7 +937,7 @@ img {
     margin-bottom: 40px;
 }
 
-.infoblock p:not(:last-of-type ) {
+.infoblock p:not(:last-of-type) {
     margin: 0 0 40px;
 }
 
@@ -1550,7 +1548,6 @@ img {
     display: grid;
     grid-template-columns: 328px 1fr;
     grid-template-rows: 1fr;
-    gap: 0 0;
     grid-template-areas:
       ". .";
 }
