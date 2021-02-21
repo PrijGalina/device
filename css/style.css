@@ -488,7 +488,7 @@ img {
     content: attr(data-num-slide);
     position: absolute;
     right: 47px;
-    top: 18px;
+    top: 16px;
     font-family: "Gilroy", "Verdana", sans-serif;
     font-style: normal;
     font-weight: 800;
