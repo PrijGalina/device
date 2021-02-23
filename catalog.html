@@ -13,7 +13,7 @@
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
-    <body class="page-body">
+    <body class="page-body  page-inner">
         <!--HEADER-->
         <header class="main-header">
             <a href="index.html" class="main-header-logo">
@@ -24,13 +24,13 @@
                 <button class="search-form-btn" type="submit">Найти</button>
             </form>
             <ul class="user-navigation clear-list">
-                <li class="user-navigation-item visually-hidden">
+                <li class="user-navigation-item user-navigation-login visually-hidden">
                     <a class="login-link default-link" href="blank.html" title="Авторизироваться на сайте">Войти</a>
                 </li>
-                <li class="user-navigation-item">
+                <li class="user-navigation-item user-navigation-personal">
                     <a class="personal-link default-link" href="blank.html" title="Перейти на страницу профиля">Валентин Петухов</a><!-- переход на страницу профиля -->
                 </li>
-                <li class="user-navigation-item">
+                <li class="user-navigation-item user-navigation-exit">
                     <a class="exit-link default-link" href="blank.html" title="Выйти из личного кабинета">Выйти</a>
                 </li>
             </ul>
@@ -47,26 +47,32 @@
                 <ul class="site-navigation menu clear-list">
                     <li class="menu-item catalog-item">
                         <a class="menu-link catalog-link" href="blank.html">Каталог товаров</a>
-                        <ul class="submenu dropdown clear-list visually-hidden">
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Виртуальная реальность</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Моноподы для селфи</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Экшн-камеры</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Фитнес-браслеты</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Умные часы</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Квадрокоптер</a>
-                            </li>
-                        </ul>
+                        <div class="submenu-block dropdown">
+                            <ul class="submenu clear-list">
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Виртуальная реальность</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Моноподы для селфи</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Экшн-камеры</a>
+                                </li>
+                            </ul>
+                            <ul class="submenu clear-list">
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Фитнес-браслеты</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Умные часы</a>
+                                </li>
+                            </ul>
+                            <ul class="submenu clear-list">
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Квадрокоптер</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="menu-item">
                         <a class="menu-link" href="blank.html">Доставка</a>
@@ -86,13 +92,13 @@
             <div class="inner-container content-title">
                 <h1 class="page-title">Моноподы для селфи</h1>
                 <ul class="breadcrumbs clear-list">
-                    <li>
+                    <li class="breadcrumbs-item">
                         <a class="breadcrumbs-link" href="index.html">Главная</a>
                     </li>
-                    <li>
+                    <li class="breadcrumbs-item">
                         <a class="breadcrumbs-link" href="blank.html">Каталог товаров</a>
                     </li>
-                    <li>
+                    <li class="breadcrumbs-item">
                         <a class="breadcrumbs-link current">Моноподы для селфи</a>
                     </li>
                 </ul>
@@ -102,17 +108,29 @@
             </div>
             <div class="catalog-inner inner-container"><!-- для грида-->
                 <section class="filter">
-                    <h2 class="section-title">Фильтр</h2>
+                    <h2 class="section-title">Фильтр:</h2>
                     <form class="filter-form" action="https://echo.htmlacademy.ru/" method="GET">
-                        <fieldset>
+                        <fieldset class="filter-group">
                             <legend class="filter-title">Стоимость</legend>
-                            <input class="filter-range" type="range" min="0" max="5000" step="100" id="cost">
+                            <div class="range-filter">
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar" style="width: 114px;"></div>
+                                        <div class="toggle toggle-min" tabindex="0" style="left: 0px;"></div>
+                                        <div class="toggle toggle-max" tabindex="0" style="left: 114px;"></div>
+                                    </div>
+                                </div>
+                                <div class="price-controls">
+                                    <div class="min-price" style="left: 0px;">от 0</div>
+                                    <div class="max-price" style="left: 124px;">до 5000</div>
+                                </div>
+                            </div>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="filter-group">
                             <legend class="filter-title">Цвет</legend>
                             <ul class="colors-list clear-list">
                                 <li class="filters-item">
-                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-black" name="color" value="black">
+                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-black" name="color" value="black" checked>
                                     <label class="filter-label" for="color-black">Черный</label>
                                 </li>
                                 <li class="filters-item">
@@ -120,11 +138,11 @@
                                     <label class="filter-label" for="color-white">Белый</label>
                                 </li>
                                 <li class="filters-item">
-                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-blue" name="color" value="blue">
+                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-blue" name="color" value="blue" checked>
                                     <label class="filter-label" for="color-blue">Синий</label>
                                 </li>
                                 <li class="filters-item">            
-                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-red" name="color" value="red">                
+                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-red" name="color" value="red" checked>                
                                     <label class="filter-label" for="color-red">Красный</label>    
                                 </li>
                                 <li class="filters-item">
@@ -133,11 +151,11 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="filter-group">
                             <legend class="filter-title">Bluetooth</legend>
                             <ul class="bluetooth-list clear-list">
                                 <li class="filters-item">
-                                    <input class="custom-choice custom-radio visually-hidden" type="radio" id="in-stock" name="bluetooth" value="in-stock">
+                                    <input class="custom-choice custom-radio visually-hidden" type="radio" id="in-stock" name="bluetooth" value="in-stock" checked>
                                     <label class="filter-label" for="in-stock">Есть</label>
                                 </li>
                                 <li class="filters-item">
@@ -179,47 +197,56 @@
                     </div>
                     <ul class="products-list clear-list">
                         <li class="products-item">
-                            <img class="products-image" src="img/products-amateur-selfie-stick.jpg" width="360" height="380" alt="">
-                            <div class="products-overlay">
-                                <button class="button products-add" type="button">В корзину</button>
-                                <button class="products-compare" type="button">Добавить к сравнению</button>
+                            <div class="product-top">
+                                <img class="products-image" src="img/products-amateur-selfie-stick.jpg" width="360" height="380" alt="">
+                                <div class="products-overlay">
+                                    <button class="button products-add" type="button">В корзину</button>
+                                    <button class="products-compare" type="button">Добавить к сравнению</button>
+                                </div>
                             </div>
                             <div class="products-info">
-                                <a class="products-title" href="blank.html">Любительская селфи палка</a>
-                                <span class="products-price">1 100 руб.</span>
+                                <a class="products-title" href="blank.html">Любительская селфи-палка</a>
+                                <span class="products-price">1&nbsp;100&nbsp;руб.</span>
                             </div>
                         </li>
                         <li class="products-item">
-                            <img class="products-image" src="img/products-professional-selfie-stick.jpg" width="360" height="380" alt="">
-                            <div class="products-overlay">
-                                <button class="button products-add" type="button">В корзину</button>
-                                <button class="products-compare" type="button">Добавить к сравнению</button>
+                            <div class="product-top">
+                                <img class="products-image" src="img/products-professional-selfie-stick.jpg" width="360" height="380" alt="">
+                                <div class="products-overlay">
+                                    <button class="button products-add" type="button">В корзину</button>
+                                    <button class="products-compare" type="button">Добавить к сравнению</button>
+                                </div>
                             </div>
                             <div class="products-info">
                                 <a class="products-title" href="blank.html">Профессиональная<br> селфи-палка</a>
-                                <span class="products-price">1 500 руб.</span>
+                                <span class="products-price">1&nbsp;500&nbsp;руб.</span>
                             </div>
                         </li>
                         <li class="products-item">
-                            <img class="products-image" src="img/products-unsinkable-selfie-stick.jpg" width="360" height="380" alt="">
-                            <div class="products-overlay">
-                                <button class="button products-add" type="button">В корзину</button>
-                                <button class="products-compare" type="button">Добавить к сравнению</button>
+                            <div class="product-top">
+                                <img class="products-image" src="img/products-unsinkable-selfie-stick.jpg" width="360" height="380" alt="">
+                                <div class="products-overlay">
+                                    <button class="button products-add" type="button">В корзину</button>
+                                    <button class="products-compare" type="button">Добавить к сравнению</button>
+                                </div>
                             </div>
                             <div class="products-info">
                                 <a class="products-title" href="blank.html">Непотопляемая<br> селфи-палка</a>
-                                <span class="products-price">1 500 руб.</span>
+                                <span class="products-price">1&nbsp;500&nbsp;руб.</span>
                             </div>
                         </li>
                         <li class="products-item">
-                            <img class="products-image" src="img/products-manual-selfie-stick.jpg" width="360" height="380" alt="">
-                            <div class="products-overlay">
-                                <button class="button products-add" type="button">В корзину</button>
-                                <button class="products-compare" type="button">Добавить к сравнению</button>
+                            <div class="product-top">
+                                <span class="product-new"></span>
+                                <img class="products-image" src="img/products-manual-selfie-stick.jpg" width="360" height="380" alt="">
+                                <div class="products-overlay">
+                                    <button class="button products-add" type="button">В корзину</button>
+                                    <button class="products-compare" type="button">Добавить к сравнению</button>
+                                </div>
                             </div>
                             <div class="products-info">
-                                <a class="products-title" href="blank.html">Селфи палка "Следуй за мной"</a>
-                                <span class="products-price">1 900 руб.</span>
+                                <a class="products-title" href="blank.html">Селфи-палка «Следуй за мной»</a>
+                                <span class="products-price">1&nbsp;900&nbsp;руб.</span>
                             </div>
                         </li>
                     </ul>
@@ -229,13 +256,13 @@
                         </li>
                         <li>
                             <ul class="pagination-sublist clear-list">
-                                <li>
+                                <li class="pagination-sublist-item">
                                     <a class="pagination-link pagination-page-numbers current">1</a>
                                 </li>
-                                <li>
+                                <li class="pagination-sublist-item">
                                     <a class="pagination-link pagination-page-numbers" href="blank.html">2</a>
                                 </li>
-                                <li>
+                                <li class="pagination-sublist-item">
                                     <a class="pagination-link pagination-page-numbers" href="blank.html">3</a>
                                 </li>
                             </ul>
@@ -269,17 +296,17 @@
                     </li>
                 </ul>
                 <ul class="social-list clear-list">
-                    <li class="social-item">
+                    <li class="social-item social-facebook">
                         <a class="social-link" href="#">
                             <span class="visually-hidden">Facebook</span>                
                         </a>
                     </li>
-                    <li class="social-item">
+                    <li class="social-item social-instagram">
                         <a class="social-link" href="#">
                             <span class="visually-hidden">Instagram</span>              
                         </a>
                     </li>
-                    <li class="social-item">
+                    <li class="social-item social-twitter">
                         <a class="social-link" href="#">
                             <span class="visually-hidden">Twitter</span>               
                         </a>
@@ -287,13 +314,13 @@
                 </ul>
                 <div class="user-basket-navigation">
                     <ul class="user-navigation clear-list">
-                        <li class="user-navigation-item visually-hidden">
+                        <li class="user-navigation-item user-navigation-login visually-hidden">
                             <a class="login-link default-link" href="blank.html">Войти</a>
                         </li>
-                        <li class="user-navigation-item">
+                        <li class="user-navigation-item user-navigation-personal">
                             <a class="personal-link default-link" href="blank.html">Валентин Петухов</a>
                         </li>
-                        <li class="user-navigation-item">
+                        <li class="user-navigation-item user-navigation-exit">
                             <a class="exit-link default-link" href="blank.html">Выйти</a>
                         </li>
                     </ul>

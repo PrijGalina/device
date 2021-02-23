@@ -24,13 +24,13 @@
                 <button class="search-form-btn" type="submit">Найти</button>
             </form>
             <ul class="user-navigation clear-list">
-                <li class="user-navigation-item">
+                <li class="user-navigation-item user-navigation-login">
                     <a class="login-link default-link" href="blank.html" title="Авторизироваться на сайте">Войти</a>
                 </li>
-                <li class="user-navigation-item visually-hidden">
+                <li class="user-navigation-item user-navigation-personal visually-hidden">
                     <a class="personal-link default-link" href="blank.html" title="Перейти на страницу профиля">Валентин Петухов</a><!-- переход на страницу профиля -->
                 </li>
-                <li class="user-navigation-item visually-hidden">
+                <li class="user-navigation-item user-navigation-exit visually-hidden">
                     <a class="exit-link default-link" href="blank.html" title="Выйти из личного кабинета">Выйти</a>
                 </li>
             </ul>
@@ -45,28 +45,34 @@
             <nav class="main-navigation">
                 <!--menu-->
                 <ul class="site-navigation menu clear-list">
-                    <li class="menu-item catalog-item">
+                    <li class="menu-item catalog-item"> <!-- открытое меню класс - "menu-open" -->
                         <a class="menu-link catalog-link" href="blank.html">Каталог товаров</a>
-                        <ul class="submenu dropdown clear-list visually-hidden">
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Виртуальная реальность</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Моноподы для селфи</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Экшн-камеры</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Фитнес-браслеты</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Умные часы</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Квадрокоптер</a>
-                            </li>
-                        </ul>
+                        <div class="submenu-block dropdown">
+                            <ul class="submenu clear-list">
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Виртуальная реальность</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Моноподы для селфи</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Экшн-камеры</a>
+                                </li>
+                            </ul>
+                            <ul class="submenu clear-list">
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Фитнес-браслеты</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Умные часы</a>
+                                </li>
+                            </ul>
+                            <ul class="submenu clear-list">
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Квадрокоптер</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="menu-item">
                         <a class="menu-link" href="blank.html">Доставка</a>
@@ -121,16 +127,12 @@
                             <p class="promo-title">Худеем<br>правильно!</p>
                             <p class="promo-description">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
                             <a class="button" href="blank.html">Подробнее</a>
-                            <table class="characteristic">
-                                <tbody class="characteristic-body">
-                                    <tr class="characteristic-row">
-                                        <td class="characteristic-value">48 часов</td>
-                                    </tr>
-                                    <tr class="characteristic-row">
-                                        <td class="characteristic-label">Без подзарядки</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="characteristics">
+                                <dl class="characteristic">
+                                    <dd class="characteristic-value">48 часов</dd>
+                                    <dt class="characteristic-label">Без подзарядки</dt>
+                                <dl>
+                            </div>
                         </div>
                     </li>
                     <li class="promo-item promo-quadcopter" data-num-slide="03">
@@ -141,18 +143,16 @@
                             <p class="promo-title">Порхает как бабочка,<br>жалит как пчела!</p>
                             <p class="promo-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
                             <a class="button" href="blank.html">Подробнее</a>
-                            <table class="characteristic">
-                                <tbody class="characteristic-body">
-                                    <tr class="characteristic-row">
-                                        <td class="characteristic-value">800 м</td>
-                                        <td class="characteristic-value">50 м</td>
-                                    </tr>
-                                    <tr class="characteristic-row">
-                                        <td class="characteristic-label">Дальность полета</td>
-                                        <td class="characteristic-label">Радиус поражения</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="characteristics">
+                                <dl class="characteristic">
+                                    <dd class="characteristic-value">800 м</dd>
+                                    <dt class="characteristic-label">Дальность полета</dt>
+                                </dl>
+                                <dl class="characteristic">
+                                    <dd class="characteristic-value">50 м</dd>
+                                    <dt class="characteristic-label">Радиус поражения</dt>
+                                </dl>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -323,13 +323,13 @@
                 </ul>
                 <div class="user-basket-navigation">
                     <ul class="user-navigation clear-list">
-                        <li class="user-navigation-item">
+                        <li class="user-navigation-item user-navigation-login">
                             <a class="login-link default-link" href="blank.html">Войти</a>
                         </li>
-                        <li class="user-navigation-item visually-hidden">
+                        <li class="user-navigation-item user-navigation-personal visually-hidden">
                             <a class="personal-link default-link" href="blank.html">Валентин Петухов</a>
                         </li>
-                        <li class="user-navigation-item visually-hidden">
+                        <li class="user-navigation-item user-navigation-exit visually-hidden">
                             <a class="exit-link default-link" href="blank.html">Выйти</a>
                         </li>
                     </ul>
