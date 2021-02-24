@@ -288,6 +288,13 @@ img {
     display: block;
 }
 
+.main-header-logo img{
+    display: block;
+    width: 163px;
+    height: 35px;
+    object-fit: contain;
+}
+
 .main-header-logo:hover img,
 .main-header-logo:focus img {
     opacity: 0.6;
@@ -636,6 +643,10 @@ img {
     padding-left: 30px;
 }
 
+.promo-item-left img {
+    object-fit: contain;
+}
+
 .promo-selfie .characteristic {
     margin-right: 58px;
 }
@@ -903,6 +914,13 @@ img {
       ". . . .";  
 }
 
+.brands-link img {
+    display: block;
+    width: 260px;
+    height: 100px;
+    object-fit: contain;
+}
+
 /*infoblock*/
 .infoblock {
     display: grid;
@@ -946,6 +964,13 @@ img {
 
 .contacts .button {
     margin-top: 68px;
+}
+
+.map img {
+    display: block;
+    width: 560px;
+    height: 222px;
+    object-fit: contain;
 }
 
 .about-item {
@@ -1107,7 +1132,18 @@ img {
     width: 32px;
     height: 32px;
     transform: translateY(-50%);
+    opacity: 0.3;
 }
+
+.social-item:hover::before,
+.social-item:focus::before {
+    opacity: 0.6;
+}
+
+.social-item:active::before {
+    opacity: 0.3;
+}
+
 
 .main-footer .social-facebook::before {
     background-image: url("../img/social-facebook.svg");
@@ -1177,6 +1213,13 @@ img {
     display: block;
     grid-area: htmlacademy;
     justify-self: end;
+}
+
+.developer-link img {
+    display: block;
+    width: 27px;
+    height: 34px;
+    object-fit: contain;
 }
 
 .developer-link:hover,
@@ -2008,4 +2051,5 @@ img {
     display: block;
     width: 994px; 
     height: 593px;
+    object-fit: contain;
 }

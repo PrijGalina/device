@@ -13,33 +13,33 @@
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
-    <body class="page-body">
+    <body class="page-body page-inner">
         <!--HEADER-->
         <header class="main-header">
-            <a class="main-header-logo" href="index.html" title="Перейти на главную страницу">
+            <a href="index.html" class="main-header-logo">
                 <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
             </a>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="GET">
-                <input class="search-form-field" type="search" name="search" placeholder="Поиск по сайту" value required> 
+                <input class="search-form-field" type="search" name="search" placeholder="Поиск по сайту" value="" required> 
                 <button class="search-form-btn" type="submit">Найти</button>
             </form>
             <ul class="user-navigation clear-list">
-                <li class="user-navigation-item visually-hidden">
+                <li class="user-navigation-item user-navigation-login visually-hidden">
                     <a class="login-link default-link" href="blank.html" title="Авторизироваться на сайте">Войти</a>
                 </li>
-                <li class="user-navigation-item">
+                <li class="user-navigation-item user-navigation-personal">
                     <a class="personal-link default-link" href="blank.html" title="Перейти на страницу профиля">Валентин Петухов</a><!-- переход на страницу профиля -->
                 </li>
-                <li class="user-navigation-item">
+                <li class="user-navigation-item user-navigation-exit">
                     <a class="exit-link default-link" href="blank.html" title="Выйти из личного кабинета">Выйти</a>
                 </li>
             </ul>
             <ul class="order-navigation clear-list">
                 <li>
-                    <a class="compare-link default-link" href="blank.html" title="Перейти к сравнению">Сравнить</a>
+                    <a class="compare-link default-link" href="blank.html" title="Перейти на страницу сравнения товаров">Сравнить</a>
                 </li> 
                 <li>
-                    <a class="basket-link default-link" href="blank.html">Корзина</a>
+                    <a class="basket-link default-link" href="blank.html" title="Перейти к корзине">Корзина</a>
                 </li>
             </ul>
             <nav class="main-navigation">
@@ -47,26 +47,32 @@
                 <ul class="site-navigation menu clear-list">
                     <li class="menu-item catalog-item">
                         <a class="menu-link catalog-link" href="blank.html">Каталог товаров</a>
-                        <ul class="submenu dropdown clear-list">
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Виртуальная реальность</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Моноподы для селфи</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Экшн-камеры</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Фитнес-браслеты</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Умные часы</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="submenu-link" href="catalog.html">Квадрокоптер</a>
-                            </li>
-                        </ul>
+                        <div class="submenu-block dropdown">
+                            <ul class="submenu clear-list">
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Виртуальная реальность</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Моноподы для селфи</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Экшн-камеры</a>
+                                </li>
+                            </ul>
+                            <ul class="submenu clear-list">
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Фитнес-браслеты</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Умные часы</a>
+                                </li>
+                            </ul>
+                            <ul class="submenu clear-list">
+                                <li class="submenu-item">
+                                    <a class="submenu-link" href="catalog.html">Квадрокоптер</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="menu-item">
                         <a class="menu-link" href="blank.html">Доставка</a>
@@ -83,8 +89,8 @@
 
         <!--MAIN-->
         <main class="container">
-            <div class="inner-container">
-                <h1>Пустая страница</h1>
+            <div class="inner-container content-title">
+                <h1 class="page-title">Пустая страница</h1>
             </div>
         </main>
         
@@ -109,31 +115,31 @@
                     </li>
                 </ul>
                 <ul class="social-list clear-list">
-                    <li class="social-item">
-                        <a class="social-link" href="#">
+                    <li class="social-item social-facebook">
+                        <a class="social-link" href="blank.html">
                             <span class="visually-hidden">Facebook</span>                
                         </a>
                     </li>
-                    <li class="social-item">
-                        <a class="social-link" href="#">
+                    <li class="social-item social-instagram">
+                        <a class="social-link" href="blank.html">
                             <span class="visually-hidden">Instagram</span>              
                         </a>
                     </li>
-                    <li class="social-item">
-                        <a class="social-link" href="#">
+                    <li class="social-item social-twitter">
+                        <a class="social-link" href="blank.html">
                             <span class="visually-hidden">Twitter</span>               
                         </a>
                     </li>
                 </ul>
                 <div class="user-basket-navigation">
                     <ul class="user-navigation clear-list">
-                        <li class="user-navigation-item visually-hidden">
+                        <li class="user-navigation-item user-navigation-login visually-hidden">
                             <a class="login-link default-link" href="blank.html">Войти</a>
                         </li>
-                        <li class="user-navigation-item">
+                        <li class="user-navigation-item user-navigation-personal">
                             <a class="personal-link default-link" href="blank.html">Валентин Петухов</a>
                         </li>
-                        <li class="user-navigation-item">
+                        <li class="user-navigation-item user-navigation-exit">
                             <a class="exit-link default-link" href="blank.html">Выйти</a>
                         </li>
                     </ul>
