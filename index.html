@@ -283,7 +283,6 @@
                 </section>
             </div>
         </main>
-
         <!--FOOTER-->
         <footer class="main-footer">
             <div class="inner-container footer-container">
@@ -348,5 +347,33 @@
                 </a>
             </div>
         </footer>
+
+        <!-- Contact-form popup -->
+        <section class="modal modal-contact">
+            <h2 class="visually-hidden">Форма обратной связи</h2>
+            <form class="contact-form" id="contact-form" action="https://echo.htmlacademy.ru/" method="POST">
+                <p class="contact-form-name">
+                    <label class="form-label" for="user-name">Ваше имя:</label>
+                    <input class="contact-form-field" id="user-name" type="text" name="contact-name" placeholder="Имя Фамилия" required>
+                </p>
+                <p class="contact-form-email">
+                    <label class="form-label" for="user-email">Ваш email:</label>
+                    <input class="contact-form-field" id="user-email" type="email" name="user-email" placeholder="email@example.com" required>
+                </p>
+                <p class="contact-form-message">
+                    <label class="form-label" for="user-massage">Текст письма:</label>
+                    <textarea class="contact-form-textarea" id="user-massage" placeholder="В свободной форме" name="user-message"></textarea>
+                </p>
+                <button class="button contact-form-button" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button" aria-label="Закрыть"></button>
+        </section>
+
+        <!-- Map popup -->
+        <section class="modal modal-map">
+            <h2 class="visually-hidden">Как до нас добраться:</h2>
+            <img class="modal-map-img" src="./img/map-full.png" width="994" height="593" alt="Офис компании по адресу ул. Строителей дом 15, Санкт-Петербург">
+            <button class="modal-close" type="button" aria-label="Закрыть"></button>
+        </section>
     </body>
 </html>
