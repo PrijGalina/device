@@ -264,12 +264,13 @@ img {
 
 .catalog-item {
     position: relative;
+    width: 280px;
 }
 
 .catalog-item::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 232px;
     width: 22px;
     height: 22px;
