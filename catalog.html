@@ -24,13 +24,10 @@
                 <button class="search-form-btn" type="submit">Найти</button>
             </form>
             <ul class="user-navigation clear-list">
-                <li class="user-navigation-item user-navigation-login visually-hidden">
-                    <a class="login-link default-link" href="blank.html" title="Авторизироваться на сайте">Войти</a>
+                <li>
+                    <a class="personal-link default-link" href="blank.html" title="Перейти на страницу профиля">Валентин Петухов</a>
                 </li>
-                <li class="user-navigation-item user-navigation-personal">
-                    <a class="personal-link default-link" href="blank.html" title="Перейти на страницу профиля">Валентин Петухов</a><!-- переход на страницу профиля -->
-                </li>
-                <li class="user-navigation-item user-navigation-exit">
+                <li>
                     <a class="exit-link default-link" href="blank.html" title="Выйти из личного кабинета">Выйти</a>
                 </li>
             </ul>
@@ -106,10 +103,10 @@
             <div class="background">
                <div class="top"></div>
             </div>
-            <div class="catalog-inner inner-container"><!-- для грида-->
+            <div class="catalog-inner inner-container">
                 <section class="filter">
                     <h2 class="section-title">Фильтр:</h2>
-                    <form class="filter-form" action="https://echo.htmlacademy.ru/" method="GET">
+                    <form class="filter-form" action="https://echo.htmlacademy.ru/" method="GET" target="_blank">
                         <fieldset class="filter-group">
                             <legend class="filter-title">Стоимость</legend>
                             <div class="range-filter">
@@ -130,24 +127,24 @@
                             <legend class="filter-title">Цвет</legend>
                             <ul class="colors-list clear-list">
                                 <li class="filters-item">
-                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-black" name="color" value="black" checked>
-                                    <label class="filter-label" for="color-black">Черный</label>
+                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-black" name="color" value="black" aria-hidden="true" focusable="false" tabindex="-1" checked>
+                                    <label class="filter-label" for="color-black" tabindex="0">Черный</label>
                                 </li>
                                 <li class="filters-item">
-                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-white" name="color" value="white">
-                                    <label class="filter-label" for="color-white">Белый</label>
+                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-white" name="color" value="white" aria-hidden="true" focusable="false" tabindex="-1">
+                                    <label class="filter-label" for="color-white" tabindex="0">Белый</label>
                                 </li>
                                 <li class="filters-item">
-                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-blue" name="color" value="blue" checked>
-                                    <label class="filter-label" for="color-blue">Синий</label>
+                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-blue" name="color" value="blue" aria-hidden="true" focusable="false" tabindex="-1" checked>
+                                    <label class="filter-label" for="color-blue" tabindex="0">Синий</label>
                                 </li>
                                 <li class="filters-item">            
-                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-red" name="color" value="red" checked>                
-                                    <label class="filter-label" for="color-red">Красный</label>    
+                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-red" name="color" value="red" aria-hidden="true" focusable="false" tabindex="-1" checked>                
+                                    <label class="filter-label" for="color-red" tabindex="0">Красный</label>    
                                 </li>
                                 <li class="filters-item">
-                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-pink" name="color" value="pink">
-                                    <label class="filter-label" for="color-pink">Розовый</label>
+                                    <input class="custom-choice custom-checkbox visually-hidden" type="checkbox" id="color-pink" name="color" value="pink" aria-hidden="true" focusable="false" tabindex="-1">
+                                    <label class="filter-label" for="color-pink" tabindex="0">Розовый</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -155,12 +152,12 @@
                             <legend class="filter-title">Bluetooth</legend>
                             <ul class="bluetooth-list clear-list">
                                 <li class="filters-item">
-                                    <input class="custom-choice custom-radio visually-hidden" type="radio" id="in-stock" name="bluetooth" value="in-stock" checked>
-                                    <label class="filter-label" for="in-stock">Есть</label>
+                                    <input class="custom-choice custom-radio visually-hidden" type="radio" id="in-stock" name="bluetooth" value="in-stock" aria-hidden="true" focusable="false" tabindex="-1" checked>
+                                    <label class="filter-label" for="in-stock" tabindex="0">Есть</label>
                                 </li>
                                 <li class="filters-item">
-                                    <input class="custom-choice custom-radio visually-hidden" type="radio" id="not-available" name="bluetooth" value="not-available">
-                                    <label class="filter-label" for="not-available">Нет</label>
+                                    <input class="custom-choice custom-radio visually-hidden" type="radio" id="not-available" name="bluetooth" value="not-available" aria-hidden="true" focusable="false" tabindex="-1">
+                                    <label class="filter-label" for="not-available" tabindex="0">Нет</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -200,8 +197,8 @@
                             <div class="product-top">
                                 <img class="products-image" src="img/products-amateur-selfie-stick.jpg" width="360" height="380" alt="">
                                 <div class="products-overlay">
-                                    <button class="button products-add" type="button">В&nbsp;корзину</button>
-                                    <button class="products-compare" type="button">Добавить к&nbsp;сравнению</button>
+                                    <button class="button products-add" type="button" aria-label="Добавить любительскую селфи-палку в корзину">В&nbsp;корзину</button>
+                                    <button class="products-compare" type="button" aria-label="Добавить любительскую селфи-палку к сравнению">Добавить к&nbsp;сравнению</button>
                                 </div>
                             </div>
                             <div class="products-info">
@@ -213,8 +210,8 @@
                             <div class="product-top">
                                 <img class="products-image" src="img/products-professional-selfie-stick.jpg" width="360" height="380" alt="">
                                 <div class="products-overlay">
-                                    <button class="button products-add" type="button">В&nbsp;корзину</button>
-                                    <button class="products-compare" type="button">Добавить к&nbsp;сравнению</button>
+                                    <button class="button products-add" type="button" aria-label="Добавить профессиональную селфи-палку в корзину">В&nbsp;корзину</button>
+                                    <button class="products-compare" type="button" aria-label="Добавить профессиональную селфи-палку к сравнению">Добавить к&nbsp;сравнению</button>
                                 </div>
                             </div>
                             <div class="products-info">
@@ -226,8 +223,8 @@
                             <div class="product-top">
                                 <img class="products-image" src="img/products-unsinkable-selfie-stick.jpg" width="360" height="380" alt="">
                                 <div class="products-overlay">
-                                    <button class="button products-add" type="button">В&nbsp;корзину</button>
-                                    <button class="products-compare" type="button">Добавить к&nbsp;сравнению</button>
+                                    <button class="button products-add" type="button" aria-label="Добавить непотопляемую селфи-палку в корзину">В&nbsp;корзину</button>
+                                    <button class="products-compare" type="button" aria-label="Добавить непотопляемую селфи-палку к сравнению">Добавить к&nbsp;сравнению</button>
                                 </div>
                             </div>
                             <div class="products-info">
@@ -240,12 +237,12 @@
                                 <span class="product-new"></span>
                                 <img class="products-image" src="img/products-manual-selfie-stick.jpg" width="360" height="380" alt="">
                                 <div class="products-overlay">
-                                    <button class="button products-add" type="button">В&nbsp;корзину</button>
-                                    <button class="products-compare" type="button">Добавить к&nbsp;сравнению</button>
+                                    <button class="button products-add" type="button" aria-label="Добавить селфи-палку 'Следуй за мной' в корзину">В&nbsp;корзину</button>
+                                    <button class="products-compare" type="button" aria-label="Добавить селфи-палку 'Следуй за мной' к сравнению">Добавить к&nbsp;сравнению</button>
                                 </div>
                             </div>
                             <div class="products-info">
-                                <a class="products-title" href="blank.html"><nobr>селфи-палка</nobr> «Следуй за мной»</a>
+                                <a class="products-title" href="blank.html"><nobr>Селфи-палка</nobr> «Следуй за мной»</a>
                                 <span class="products-price">1&nbsp;900&nbsp;руб.</span>
                             </div>
                         </li>
@@ -296,31 +293,28 @@
                     </li>
                 </ul>
                 <ul class="social-list clear-list">
-                    <li class="social-item social-facebook">
-                        <a class="social-link" href="blank.html">
+                    <li class="social-item">
+                        <a class="social-link social-facebook" href="blank.html">
                             <span class="visually-hidden">Facebook</span>                
                         </a>
                     </li>
-                    <li class="social-item social-instagram">
-                        <a class="social-link" href="blank.html">
+                    <li class="social-item">
+                        <a class="social-link social-instagram" href="blank.html">
                             <span class="visually-hidden">Instagram</span>              
                         </a>
                     </li>
-                    <li class="social-item social-twitter">
-                        <a class="social-link" href="blank.html">
+                    <li class="social-item">
+                        <a class="social-link social-twitter" href="blank.html">
                             <span class="visually-hidden">Twitter</span>               
                         </a>
                     </li>
                 </ul>
                 <div class="user-basket-navigation">
                     <ul class="user-navigation clear-list">
-                        <li class="user-navigation-item user-navigation-login visually-hidden">
-                            <a class="login-link default-link" href="blank.html">Войти</a>
-                        </li>
-                        <li class="user-navigation-item user-navigation-personal">
+                        <li>
                             <a class="personal-link default-link" href="blank.html">Валентин Петухов</a>
                         </li>
-                        <li class="user-navigation-item user-navigation-exit">
+                        <li>
                             <a class="exit-link default-link" href="blank.html">Выйти</a>
                         </li>
                     </ul>
