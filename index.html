@@ -11,7 +11,7 @@
         <link rel="manifest" href="manifest.webmanifest">
 
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
     </head>
     <body class="page-body">
         <!--HEADER-->
@@ -273,7 +273,7 @@
                     <a class="map map-link" href="#">
                         <img src="img/map.png" width="560" height="222" alt="Адрес на карте: улица Строителей, дом 15">
                     </a>
-                    <a class="button" href="#">напишите нам</a>
+                    <a class="button contact-modal-open" href="#">напишите нам</a>
                 </section>
             </div>
         </main>
@@ -342,11 +342,11 @@
             <form class="contact-form" id="contact-form" action="https://echo.htmlacademy.ru/" method="POST">
                 <p class="contact-form-name">
                     <label class="form-label" for="user-name">Ваше имя:</label>
-                    <input class="contact-form-field" id="user-name" type="text" name="contact-name" placeholder="Имя Фамилия" required>
+                    <input class="contact-form-field" id="user-name" type="text" name="contact-name" placeholder="Имя Фамилия">
                 </p>
                 <p class="contact-form-email">
                     <label class="form-label" for="user-email">Ваш email:</label>
-                    <input class="contact-form-field" id="user-email" type="email" name="user-email" placeholder="email@example.com" required>
+                    <input class="contact-form-field" id="user-email" type="email" name="user-email" placeholder="email@example.com">
                 </p>
                 <p class="contact-form-message">
                     <label class="form-label" for="user-massage">Текст письма:</label>
@@ -363,5 +363,7 @@
             <img class="modal-map-img" src="./img/map-full.png" width="994" height="593" alt="Офис компании по адресу ул. Строителей дом 15, Санкт-Петербург">
             <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </section>
+        <div class="overlay"></div>
+        <script src="js/script.min.js"></script>
     </body>
 </html>

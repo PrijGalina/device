@@ -1068,7 +1068,7 @@ img {
 }
 
 .contacts .button {
-    margin-top: 68px;
+    margin-top: 76px;
 }
 
 .map img {
@@ -2133,6 +2133,33 @@ img {
     box-shadow: 0 10px 16px var(--transparent-black-02);
 }
 
+@keyframes emergence {
+    0% {transform: translateX(250%) translateY(-50%);opacity: 0;}
+    20% {opacity: 0.5;}
+    100% {transform: translateX(-50%) translateY(-50%);opacity: 1;}
+}
+
+@keyframes apparition {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(-50%) translateY(-50%);}
+    10%, 30%, 50%, 0%, 90% { transform: translateX(-53%) translateY(-50%);}
+    20%, 40%, 60%, 80% { transform: translateX(-47%) translateY(-50%);}
+}
+
+.modal-emergence {
+    animation-name : emergence;
+    animation-duration: 0.6s;
+}
+
+.modal-error {
+    animation-name : shake;
+    animation-duration: 0.6s;
+}
+
 .contact-form {
     display: grid;
     grid-template-columns: 360px 360px;
@@ -2282,4 +2309,22 @@ img {
     width: 994px; 
     height: 593px;
     object-fit: contain;
+}
+
+.overlay {
+    content: "";
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--transparent-black-03);
+    z-index: 10;
+    animation-name : apparition;
+    animation-duration: 0.5s;
+}
+
+.overlay.open {
+    display: block;
 }
