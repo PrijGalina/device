@@ -6,8 +6,8 @@
         <title>Device</title>
 
         <link rel="icon" href="favicon.ico">
-        <link rel="icon" href="img/favicon/icon.svg" type="image/svg+×ml">
-        <link rel="apple-touch-icon" href="img/favicon/152.png">
+        <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="img/favicon/152.png" type="image/png">
         <link rel="manifest" href="manifest.webmanifest">
 
         <link href="css/normalize.css" rel="stylesheet">
@@ -39,7 +39,7 @@
             <nav class="main-navigation">
                 <!--menu-->
                 <ul class="site-navigation menu clear-list">
-                    <li class="menu-item catalog-item"> <!-- открытое меню класс - "menu-open" -->
+                    <li class="menu-item catalog-item">
                         <a class="menu-link catalog-link" href="blank.html">Каталог товаров</a>
                         <div class="submenu-block dropdown">
                             <ul class="submenu clear-list">
@@ -50,12 +50,12 @@
                                     <a class="submenu-link" href="catalog.html">Моноподы для селфи</a>
                                 </li>
                                 <li class="submenu-item">
-                                    <a class="submenu-link" href="catalog.html">Экшн-камеры</a>
+                                    <a class="submenu-link nowrap" href="catalog.html">Экшн-камеры</a>
                                 </li>
                             </ul>
                             <ul class="submenu clear-list">
                                 <li class="submenu-item">
-                                    <a class="submenu-link" href="catalog.html">Фитнес-браслеты</a>
+                                    <a class="submenu-link nowrap" href="catalog.html">Фитнес-браслеты</a>
                                 </li>
                                 <li class="submenu-item">
                                     <a class="submenu-link" href="catalog.html">Умные часы</a>
@@ -99,16 +99,16 @@
                             <a class="button" href="blank.html">Подробнее</a>
                             <div class="characteristics">
                                 <dl class="characteristic">
-                                    <dd class="characteristic-value">8,5&nbsp;м</dd>
                                     <dt class="characteristic-label">Длина палки</dt>
+                                    <dd class="characteristic-value">8,5&nbsp;м</dd>
                                 </dl>
                                 <dl class="characteristic">
-                                    <dd class="characteristic-value">5&nbsp;кг</dd>
                                     <dt class="characteristic-label">Вес палки</dt>
+                                    <dd class="characteristic-value">5&nbsp;кг</dd>
                                 </dl>
                                 <dl class="characteristic">
-                                    <dd class="characteristic-value">Карбон</dd>
                                     <dt class="characteristic-label">Материал</dt>
+                                    <dd class="characteristic-value">Карбон</dd>                                    
                                 </dl>
                             </div>
                         </div>
@@ -119,13 +119,13 @@
                         </div>
                         <div class="promo-item-right">
                             <p class="promo-title">Худеем<br>правильно!</p>
-                            <p class="promo-description">Мотивирующие <nobr>фитнес-браслеты</nobr> помогут найти в&nbsp;себе силы<br>не&nbsp;пропускать занятия и&nbsp;соблюдать диету.</p>
+                            <p class="promo-description">Мотивирующие <span class="nowrap">фитнес-браслеты</span> помогут найти в&nbsp;себе силы<br>не&nbsp;пропускать занятия и&nbsp;соблюдать диету.</p>
                             <a class="button" href="blank.html">Подробнее</a>
                             <div class="characteristics">
                                 <dl class="characteristic">
-                                    <dd class="characteristic-value">48&nbsp;часов</dd>
                                     <dt class="characteristic-label">Без подзарядки</dt>
-                                <dl>
+                                    <dd class="characteristic-value">48&nbsp;часов</dd>
+                                </dl>
                             </div>
                         </div>
                     </li>
@@ -139,12 +139,12 @@
                             <a class="button" href="blank.html">Подробнее</a>
                             <div class="characteristics">
                                 <dl class="characteristic">
-                                    <dd class="characteristic-value">800&nbsp;м</dd>
                                     <dt class="characteristic-label">Дальность полета</dt>
+                                    <dd class="characteristic-value">800&nbsp;м</dd>
                                 </dl>
                                 <dl class="characteristic">
-                                    <dd class="characteristic-value">50&nbsp;м</dd>
                                     <dt class="characteristic-label">Радиус поражения</dt>
+                                    <dd class="characteristic-value">50&nbsp;м</dd>
                                 </dl>
                             </div>
                         </div>
@@ -176,7 +176,7 @@
                         <a class="popular-title popular-monopods" href="catalog.html">Моноподы<br> для селфи</a>
                     </li>
                     <li class="popular-item">
-                        <a class="popular-title popular-cameras" href="catalog.html"><nobr>Экшн-камеры</nobr></a>
+                        <a class="popular-title popular-cameras nowrap" href="catalog.html">Экшн-камеры</a>
                     </li>
                     <li class="popular-item">
                         <a class="popular-title letter-spacing-none popular-bracelets" href="catalog.html">Фитнес-<br>браслеты</a>
@@ -195,8 +195,8 @@
                 <div class="inner-container">
                     <h2 class="visually-hidden">Сервисы</h2>
                     <ul class="services-navigation clear-list">
-                        <li class="services-tab">
-                            <button class="button services-btn services-btn-active" type="button">Доставка</button>
+                        <li class="services-tab services-tab-active">
+                            <button class="button services-btn" type="button">Доставка</button>
                         </li>
                         <li class="services-tab">
                             <button class="button services-btn" type="button">Гарантия</button>
@@ -212,7 +212,7 @@
                         </li>
                         <li class="services-item services-item-guarantee">                    
                             <h3 class="services-title">Гарантия</h3>
-                            <p class="services-description">Если <nobr>из-за</nobr> возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом &mdash;<br> не&nbsp;переживайте, мы&nbsp;выдадим вам новый.<br>Товар, не&nbsp;дом, конечно&nbsp;же.</p>
+                            <p class="services-description">Если <span class="nowrap">из-за</span> возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом &mdash;<br> не&nbsp;переживайте, мы&nbsp;выдадим вам новый.<br>Товар, не&nbsp;дом, конечно&nbsp;же.</p>
                         </li>
                         <li class="services-item services-item-credit">
                             <h3 class="services-title">Кредит</h3>
@@ -270,10 +270,10 @@
                 <section class="contacts">
                     <h2 class="contacts-title infoblock-title">Контакты</h2>
                     <p>Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <a class="map map-link" href="#">
+                    <a class="map map-link" href="./img/map-full.png" target="_blank">
                         <img src="img/map.png" width="560" height="222" alt="Адрес на карте: улица Строителей, дом 15">
                     </a>
-                    <a class="button contact-modal-open" href="#">напишите нам</a>
+                    <a class="button contact-modal-open" href="form.html">напишите нам</a>
                 </section>
             </div>
         </main>
@@ -365,6 +365,6 @@
             <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </section>
         <div class="overlay"></div>
-        <script src="js/script.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

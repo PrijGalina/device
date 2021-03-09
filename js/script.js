@@ -24,12 +24,13 @@ let services_slides = document.querySelectorAll(".services-item");
 services_buttons.forEach(function(item,  num) {
     item.addEventListener( 'click', function(e) {
         e.preventDefault();
-        let services_button_active = document.querySelector(".services-btn-active");
+        let services_tab_active = document.querySelector(".services-tab-active");
+        let services_button_active = services_tab_active.querySelector(".services-btn");
         let services_slide_active = document.querySelector(".services-current");
         if (item !== services_button_active){
-            services_button_active.classList.remove("services-btn-active");
+            services_tab_active.classList.remove("services-tab-active");
             services_slide_active.classList.remove("services-current");
-            item.classList.add("services-btn-active");
+            item.parentElement.classList.add("services-tab-active");
             services_slides[num].classList.add("services-current");
         }
         item.blur();
