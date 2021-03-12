@@ -1,16 +1,9 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 /* «Gilroy» */
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy"),
-     url("../fonts/Gilroy-Extrabold.woff2") format("woff2"),
-     url("../fonts/Gilroy-Extrabold.woff") format("woff");
+    url("../fonts/Gilroy-Extrabold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Extrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
@@ -18,8 +11,8 @@
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy"),
-     url("../fonts/Gilroy-Light.woff2") format("woff2"),
-     url("../fonts/Gilroy-Light.woff") format("woff");
+    url("../fonts/Gilroy-Light.woff2") format("woff2"),
+    url("../fonts/Gilroy-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -28,8 +21,8 @@
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans"),
-     url("../fonts/opensanslight.woff2") format("woff2"),
-     url("../fonts/opensanslight.woff") format("woff");
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -37,8 +30,8 @@
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans"),
-     url("../fonts/opensans.woff2") format("woff2"),
-     url("../fonts/opensans.woff") format("woff");
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -80,13 +73,14 @@
 .page-body {
   display: -ms-grid;
   display: grid;
+  min-width: 1200px;
   -ms-grid-columns: 100%;
-  grid-template-columns: 100%;
+      grid-template-columns: 100%;
   -ms-grid-rows: minmax(320px, -webkit-min-content) 1fr minmax(324px, -webkit-min-content);
+      grid-template-rows: minmax(320px, -webkit-min-content) 1fr minmax(324px, -webkit-min-content);
   -ms-grid-rows: minmax(320px, min-content) 1fr minmax(324px, min-content);
-  grid-template-rows: minmax(320px, -webkit-min-content) 1fr minmax(324px, -webkit-min-content);
-  grid-template-rows: minmax(320px, min-content) 1fr minmax(324px, min-content);
-    grid-template-areas:
+      grid-template-rows: minmax(320px, min-content) 1fr minmax(324px, min-content);
+  grid-template-areas:
     "header"
     "main"
     "footer";
@@ -142,13 +136,13 @@ img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 540px 0 280px 0 220px;
-  grid-template-columns: 540px 280px 220px;
+      grid-template-columns: 540px 280px 220px;
   -ms-grid-rows: -webkit-min-content 35px -webkit-min-content;
+      grid-template-rows: -webkit-min-content -webkit-min-content;
   -ms-grid-rows: min-content 35px min-content;
-  grid-template-rows: -webkit-min-content -webkit-min-content;
-  grid-template-rows: min-content min-content;
+      grid-template-rows: min-content min-content;
   gap: 35px 0;
-    grid-template-areas:
+  grid-template-areas:
     "search user basket"
     "nav nav nav";
   -webkit-box-align: end;
@@ -185,7 +179,7 @@ img {
   display: -ms-flexbox; 
   display: flex;
   -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+      flex-wrap: wrap;
   grid-area: user; 
   padding-right: 40px;
 }
@@ -295,7 +289,7 @@ img {
   display: -ms-flexbox; 
   display: flex;
   -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+      flex-wrap: wrap;
   grid-area: basket;
   -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -307,7 +301,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
     -ms-flex-pack: justify;
       justify-content: space-between;
@@ -325,16 +319,14 @@ img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 540px 159px 121px 220px;
-  grid-template-columns: 540px 159px 121px 220px;
+      grid-template-columns: 540px 159px 121px 220px;
   -ms-grid-rows: 40px;
-  grid-template-rows: 40px;
-    grid-template-areas:
-    ". . . .";
+      grid-template-rows: 40px;
 }
 
 .site-navigation .menu-item:last-of-type {
   -ms-grid-column-align: end;
-    justify-self: end;
+      justify-self: end;
 }
 
 .menu-item:last-of-type a {
@@ -370,7 +362,7 @@ img {
   width: 163px;
   height: 35px;
   -o-object-fit: contain;
-     object-fit: contain;
+      object-fit: contain;
 }
 
 .main-header-logo:hover img,
@@ -596,7 +588,7 @@ img {
     -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: start;
     -ms-flex-align: start;
       align-items: flex-start;
@@ -708,11 +700,11 @@ img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 560px 40px 560px;
-  grid-template-columns: 560px 560px;
+      grid-template-columns: 560px 560px;
   -ms-grid-rows: 528px;
-  grid-template-rows: 528px;
+      grid-template-rows: 528px;
   gap: 0 40px;
-    grid-template-areas: "promo-left promo-right";
+  grid-template-areas: "promo-left promo-right";
 }
 
 .promo-item::before {
@@ -855,7 +847,7 @@ img {
 
 .promo-item-left img {
   -o-object-fit: contain;
-     object-fit: contain;
+      object-fit: contain;
 }
 
 .promo-selfie .characteristic {
@@ -909,9 +901,9 @@ img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr 40px 1fr 40px 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr;
-  grid-template-rows: 1fr;
+      grid-template-rows: 1fr;
   gap: 0 40px;
 }
 
@@ -1044,9 +1036,9 @@ img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 277px 123px 760px;
-  grid-template-columns: 277px 760px;
+      grid-template-columns: 277px 760px;
   -ms-grid-rows: minmax(320px, 1fr);
-  grid-template-rows: minmax(320px, 1fr);
+      grid-template-rows: minmax(320px, 1fr);
   gap: 0 123px;
   -webkit-box-align: start;
     -ms-flex-align: start;
@@ -1180,7 +1172,7 @@ img {
       box-shadow: none;
   background-color: var(--basic-black);
   -webkit-box-shadow: 0 0 5px 0 var(--special-yellow-dark);
-      box-shadow: 0 0 5px 0 var(--special-yellow-dark);
+    box-shadow: 0 0 5px 0 var(--special-yellow-dark);
 }
 
 .services-btn:active {
@@ -1240,12 +1232,10 @@ img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 260px 40px 260px 40px 260px 40px 260px;
-  grid-template-columns: 260px 260px 260px 260px;
+      grid-template-columns: 260px 260px 260px 260px;
   -ms-grid-rows: 100px;
-  grid-template-rows: 100px;
+      grid-template-rows: 100px;
   gap: 0 40px;
-    grid-template-areas:
-    ". . . .";  
 }
 
 .brands-link {
@@ -1257,7 +1247,7 @@ img {
   width: 260px;
   height: 100px;
   -o-object-fit: contain;
-     object-fit: contain;
+      object-fit: contain;
 }
 
 .brands-link:focus {
@@ -1297,9 +1287,9 @@ img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 473px 127px 560px;
-  grid-template-columns: 473px 560px;
+      grid-template-columns: 473px 560px;
   -ms-grid-rows: minmax(580px, 1fr);
-  grid-template-rows: minmax(580px, 1fr);
+      grid-template-rows: minmax(580px, 1fr);
   gap: 0 127px;
   margin-bottom: 77px;
 }
@@ -1353,7 +1343,7 @@ img {
   width: 560px;
   height: 222px;
   -o-object-fit: contain;
-     object-fit: contain;
+      object-fit: contain;
 }
 
 .map-link:focus {
@@ -1426,11 +1416,11 @@ img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 360px 0 1fr 0 360px;
-  grid-template-columns: 360px 1fr 360px;
+      grid-template-columns: 360px 1fr 360px;
   -ms-grid-rows: 68px 39px 22px 39px 61px;
-  grid-template-rows: 68px 22px 61px;
+      grid-template-rows: 68px 22px 61px;
   gap: 39px 0;
-    grid-template-areas:
+  grid-template-areas:
     "logo second-menu second-menu"
     "address first-menu phone"
     ". social htmlacademy";
@@ -1459,7 +1449,7 @@ img {
   height: 35px;
   grid-area: logo;
   -ms-grid-row-align: end;
-    align-self: end;
+      align-self: end;
 }
 
 .main-footer-logo:hover {
@@ -1493,7 +1483,7 @@ img {
   -ms-grid-column: 1;
   grid-area: address;
   -ms-grid-row-align: center;
-    align-self: center;
+      align-self: center;
   line-height: 20px;
   color: var(--transparent-white-07);
   font-style: normal;
@@ -1505,9 +1495,9 @@ img {
   position: relative;
   grid-area: first-menu;
   -ms-grid-column-align: center;
-    justify-self: center;
+      justify-self: center;
   -ms-grid-row-align: end;
-    align-self: end;
+      align-self: end;
   line-height: 1;
 }
 
@@ -1660,9 +1650,9 @@ img {
   color: var(--transparent-white-07);
   grid-area: phone;
   -ms-grid-column-align: end;
-    justify-self: end;
+      justify-self: end;
   -ms-grid-row-align: center;
-    align-self: center;
+      align-self: center;
   line-height: 20px;
 }
 
@@ -1690,9 +1680,9 @@ img {
   display: block;
   grid-area: htmlacademy;
   -ms-grid-column-align: end;
-    justify-self: end;
+      justify-self: end;
   -ms-grid-row-align: end;
-    align-self: end;
+      align-self: end;
 }
 
 .developer-link img {
@@ -1700,7 +1690,7 @@ img {
   width: 27px;
   height: 34px;
   -o-object-fit: contain;
-     object-fit: contain;
+      object-fit: contain;
 }
 
 .developer-link:hover,
@@ -1781,7 +1771,7 @@ img {
 .filter-label {
   -ms-flex-item-align: center;
     -ms-grid-row-align: center;
-    align-self: center;
+      align-self: center;
   margin-left: 42px;
   font-size: 14px;
   line-height: 19px;
@@ -2160,7 +2150,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
     -ms-flex-pack: justify;
       justify-content: space-between;
@@ -2242,7 +2232,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
     -ms-flex-pack: justify;
       justify-content: space-between;
@@ -2304,11 +2294,9 @@ img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 328px 1fr;
-  grid-template-columns: 328px 1fr;
+      grid-template-columns: 328px 1fr;
   -ms-grid-rows: 1fr;
-  grid-template-rows: 1fr;
-    grid-template-areas:
-    ". .";
+      grid-template-rows: 1fr;
 }
 
 .catalog {
@@ -2337,7 +2325,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: 60px;
 }
 
@@ -2370,7 +2358,7 @@ img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 160px 40px auto 40px 60px;
-  grid-template-columns: 160px auto 60px;
+      grid-template-columns: 160px auto 60px;
   gap: 0 40px;
   -webkit-box-align: center;
     -ms-flex-align: center;
@@ -2384,7 +2372,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .sort-value-list {
@@ -2405,7 +2393,7 @@ img {
   display: grid;
   grid-gap: 48px 39px;
   -ms-grid-columns: 360px 39px 360px;
-  grid-template-columns: 360px 360px;
+      grid-template-columns: 360px 360px;
   margin-bottom: 40px;
 }
 
@@ -2424,9 +2412,9 @@ img {
 
 .page-inner {
   -ms-grid-rows: minmax(206px, -webkit-min-content) 1fr minmax(324px, -webkit-min-content);
+      grid-template-rows: minmax(206px, -webkit-min-content) 1fr minmax(324px, -webkit-min-content);
   -ms-grid-rows: minmax(206px, min-content) 1fr minmax(324px, min-content);
-  grid-template-rows: minmax(206px, -webkit-min-content) 1fr minmax(324px, -webkit-min-content);
-  grid-template-rows: minmax(206px, min-content) 1fr minmax(324px, min-content);
+      grid-template-rows: minmax(206px, min-content) 1fr minmax(324px, min-content);
 }
 
 .page-inner .main-header {
@@ -2481,9 +2469,9 @@ img {
 }
 
 .toggle:focus {
-   outline: none;
-   -webkit-box-shadow: 0 0 5px 1px var(--special-yellow-dark);
-       box-shadow: 0 0 5px 1px var(--special-yellow-dark); 
+  outline: none;
+  -webkit-box-shadow: 0 0 5px 1px var(--special-yellow-dark);
+      box-shadow: 0 0 5px 1px var(--special-yellow-dark); 
 }
 
 .price-controls {
@@ -2535,7 +2523,7 @@ img {
 .modal-contact {
   width: 960px;
   height: 550px;
-  padding: 91px 100px 60px;
+  padding: 91px 100px 58px;
   -webkit-box-sizing: border-box;
       box-sizing: border-box;
   background-color: var(--basic-white);
@@ -2544,37 +2532,99 @@ img {
 }
 
 @-webkit-keyframes emergence {
-  0% {-webkit-transform: translateX(250%) translateY(-50%);transform: translateX(250%) translateY(-50%);opacity: 0;}
-  20% {opacity: 0.5;}
-  100% {-webkit-transform: translateX(-50%) translateY(-50%);transform: translateX(-50%) translateY(-50%);opacity: 1;}
+  0% {
+    -webkit-transform: translateX(250%) translateY(-50%);
+        transform: translateX(250%) translateY(-50%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+  }
 }
 
 @keyframes emergence {
-  0% {-webkit-transform: translateX(250%) translateY(-50%);transform: translateX(250%) translateY(-50%);opacity: 0;}
-  20% {opacity: 0.5;}
-  100% {-webkit-transform: translateX(-50%) translateY(-50%);transform: translateX(-50%) translateY(-50%);opacity: 1;}
+  0% {
+    -webkit-transform: translateX(250%) translateY(-50%);
+        transform: translateX(250%) translateY(-50%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes apparition {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes apparition {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes shake {
-  0%, 100% { -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%);}
-  10%, 30%, 50%, 0%, 90% { -webkit-transform: translateX(-53%) translateY(-50%); transform: translateX(-53%) translateY(-50%);}
-  20%, 40%, 60%, 80% { -webkit-transform: translateX(-47%) translateY(-50%); transform: translateX(-47%) translateY(-50%);}
+  0%, 
+  100% { 
+    -webkit-transform: translateX(-50%) translateY(-50%); 
+        transform: translateX(-50%) translateY(-50%);
+  }
+  10%, 
+  30%, 
+  50%, 
+  70%, 
+  90% { 
+    -webkit-transform: translateX(-53%) translateY(-50%); 
+        transform: translateX(-53%) translateY(-50%);
+    }
+  20%, 
+  40%, 
+  60%, 
+  80% { 
+    -webkit-transform: translateX(-47%) translateY(-50%); 
+        transform: translateX(-47%) translateY(-50%);
+  }
 }
 
 @keyframes shake {
-  0%, 100% { -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%);}
-  10%, 30%, 50%, 0%, 90% { -webkit-transform: translateX(-53%) translateY(-50%); transform: translateX(-53%) translateY(-50%);}
-  20%, 40%, 60%, 80% { -webkit-transform: translateX(-47%) translateY(-50%); transform: translateX(-47%) translateY(-50%);}
+  0%, 
+  100% { 
+    -webkit-transform: translateX(-50%) translateY(-50%); 
+        transform: translateX(-50%) translateY(-50%);
+  }
+  10%, 
+  30%, 
+  50%, 
+  70%, 
+  90% { 
+    -webkit-transform: translateX(-53%) translateY(-50%); 
+        transform: translateX(-53%) translateY(-50%);
+  }
+  20%, 
+  40%, 
+  60%, 
+  80% { 
+    -webkit-transform: translateX(-47%) translateY(-50%); 
+        transform: translateX(-47%) translateY(-50%);
+  }
 }
 
 .modal-emergence {
@@ -2595,13 +2645,13 @@ img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 360px 40px 360px;
-  grid-template-columns: 360px 360px;
-  -ms-grid-rows: -webkit-max-content 32px -webkit-max-content 32px 40px;
-  -ms-grid-rows: max-content 32px max-content 32px 40px;
-  grid-template-rows: -webkit-max-content -webkit-max-content 40px;
-  grid-template-rows: max-content max-content 40px;
+      grid-template-columns: 360px 360px;
+  -ms-grid-rows: 82px 32px 212px 32px 40px;
+      grid-template-rows: 82px 212px 40px;
+  -ms-grid-rows: 82px 32px 212px 32px 40px;
+      grid-template-rows: 82px 212px 40px;
   gap: 32px 40px;
-    grid-template-areas:
+  grid-template-areas:
     "name email"
     "message message"
     "btn btn";
@@ -2651,37 +2701,6 @@ img {
   line-height: 19px;
 }
 
-.contact-form-field::-webkit-input-placeholder, .contact-form-textarea::-webkit-input-placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 19px;
-}
-
-.contact-form-field::-moz-placeholder, .contact-form-textarea::-moz-placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 19px;
-}
-
-.contact-form-field:-ms-input-placeholder, .contact-form-textarea:-ms-input-placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 19px;
-}
-
-.contact-form-field::-ms-input-placeholder, .contact-form-textarea::-ms-input-placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 19px;
-}
-
-.contact-form-field::placeholder,
-.contact-form-textarea::placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 19px;
-}
-
 .contact-form-field {
   width: 100%;
   height: 50px;
@@ -2709,6 +2728,7 @@ img {
   height: 167px;
   -webkit-box-sizing: border-box;
       box-sizing: border-box;
+  resize: none;
 }
 
 
@@ -2717,6 +2737,7 @@ img {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: btn;
+  width: 200px;
 }
 
 .contact-form-button::before {
@@ -2783,7 +2804,7 @@ img {
   width: 994px; 
   height: 593px;
   -o-object-fit: contain;
-     object-fit: contain;
+    object-fit: contain;
 }
 
 .overlay {

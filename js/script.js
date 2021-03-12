@@ -3,7 +3,7 @@ let promo_buttons = document.querySelectorAll(".promo-pagination-item-btn");
 let promo_slides = document.querySelectorAll(".promo-item");
 
 promo_buttons.forEach(function(item,  num) {
-  item.addEventListener( 'click', function(e) {
+  item.addEventListener( "click", function(e) {
     e.preventDefault();
     let promo_button_active = document.querySelector(".btn-current");
     let promo_slide_active = document.querySelector(".slide-current");
@@ -22,7 +22,7 @@ let services_buttons = document.querySelectorAll(".services-btn");
 let services_slides = document.querySelectorAll(".services-item");
 
 services_buttons.forEach(function(item,  num) {
-  item.addEventListener( 'click', function(e) {
+  item.addEventListener( "click", function(e) {
     e.preventDefault();
     let services_tab_active = document.querySelector(".services-tab-active");
     let services_button_active = services_tab_active.querySelector(".services-btn");
@@ -58,7 +58,7 @@ catch (err) {
   isStorageSupport = false;
 }
 
-contact_modal_open_button.addEventListener( 'click', function(e) {
+contact_modal_open_button.addEventListener( "click", function(e) {
   e.preventDefault();
   overlay.classList.add("open");
   contact_modal.classList.add("modal-open");
@@ -73,7 +73,7 @@ contact_modal_open_button.addEventListener( 'click', function(e) {
   }
 });
 
-contact_modal_close.addEventListener( 'click', function(e) {
+contact_modal_close.addEventListener( "click", function(e) {
   e.preventDefault();
   contact_modal.classList.remove("modal-open");
   contact_modal.classList.remove("modal-emergence");
@@ -99,14 +99,14 @@ let map_modal_open_button = document.querySelector(".map-link");
 let map_modal = document.querySelector(".modal-map");
 let map_modal_close = map_modal.querySelector(".modal-close");
 
-map_modal_open_button.addEventListener( 'click', function(e) {
+map_modal_open_button.addEventListener( "click", function(e) {
   e.preventDefault();
   overlay.classList.add("open");
   map_modal.classList.add("modal-open");
   map_modal.classList.add("modal-emergence");
 });
 
-map_modal_close.addEventListener( 'click', function(e) {
+map_modal_close.addEventListener( "click", function(e) {
   e.preventDefault();
   map_modal.classList.remove("modal-open");
   map_modal.classList.remove("modal-emergence");
@@ -114,7 +114,7 @@ map_modal_close.addEventListener( 'click', function(e) {
 });
 
 let overlay = document.querySelector(".overlay");
-overlay.addEventListener( 'click', function(e) {
+overlay.addEventListener( "click", function(e) {
   e.preventDefault();
   map_modal.classList.remove("modal-open");
   map_modal.classList.remove("modal-emergence");
@@ -145,7 +145,7 @@ window.addEventListener("keydown", function (e) {
 });
 
 //
-contact_modal.addEventListener('animationend', () => {
+contact_modal.addEventListener("animationend", () => {
   if(contact_modal.classList.contains("modal-error")) {
     contact_modal.classList.remove("modal-error");
     contact_modal.classList.remove("modal-emergence");
